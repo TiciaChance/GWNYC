@@ -10,8 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let testingFMAPI = FarmersMarketAPI()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        testingFMAPI.getFarmersMarketData()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

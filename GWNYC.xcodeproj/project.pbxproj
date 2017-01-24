@@ -13,9 +13,14 @@
 		8613976E1E37B01E001904B2 /* GWNYC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8613976C1E37B01E001904B2 /* GWNYC.xcdatamodeld */; };
 		861397701E37B01E001904B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8613976F1E37B01E001904B2 /* Assets.xcassets */; };
 		861397731E37B01E001904B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861397711E37B01E001904B2 /* LaunchScreen.storyboard */; };
+		86C0D70F1E37C69100D65765 /* FarmersMarketParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C0D70E1E37C69100D65765 /* FarmersMarketParser.swift */; };
+		86C0D7121E37C6C600D65765 /* FarmersMarketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C0D7111E37C6C600D65765 /* FarmersMarketAPI.swift */; };
+		EEAA202FE17727BD9EB4E045 /* Pods_GWNYC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11C69E2496162CAAEE5B4E2 /* Pods_GWNYC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A655F78B97305F045D87056 /* Pods-GWNYC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GWNYC.release.xcconfig"; path = "Pods/Target Support Files/Pods-GWNYC/Pods-GWNYC.release.xcconfig"; sourceTree = "<group>"; };
+		41D0E581288FE7AE02F5C6BD /* Pods-GWNYC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GWNYC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GWNYC/Pods-GWNYC.debug.xcconfig"; sourceTree = "<group>"; };
 		861397621E37B01E001904B2 /* GWNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GWNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		861397651E37B01E001904B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		861397671E37B01E001904B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		8613976F1E37B01E001904B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		861397721E37B01E001904B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		861397741E37B01E001904B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86C0D70E1E37C69100D65765 /* FarmersMarketParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmersMarketParser.swift; sourceTree = "<group>"; };
+		86C0D7111E37C6C600D65765 /* FarmersMarketAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmersMarketAPI.swift; sourceTree = "<group>"; };
+		C11C69E2496162CAAEE5B4E2 /* Pods_GWNYC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GWNYC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEAA202FE17727BD9EB4E045 /* Pods_GWNYC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41C163D413130E710EB0BB0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C11C69E2496162CAAEE5B4E2 /* Pods_GWNYC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		861397591E37B01E001904B2 = {
 			isa = PBXGroup;
 			children = (
 				861397641E37B01E001904B2 /* GWNYC */,
 				861397631E37B01E001904B2 /* Products */,
+				FA63F3FBE1600046465E5D3F /* Pods */,
+				41C163D413130E710EB0BB0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +75,66 @@
 		861397641E37B01E001904B2 /* GWNYC */ = {
 			isa = PBXGroup;
 			children = (
-				861397651E37B01E001904B2 /* AppDelegate.swift */,
-				861397671E37B01E001904B2 /* ViewController.swift */,
-				861397691E37B01E001904B2 /* Main.storyboard */,
+				8613977A1E37B031001904B2 /* App Delegation */,
+				86C0D7131E37C6D100D65765 /* View Controllers */,
+				86C0D70D1E37C5D000D65765 /* Model */,
+				86C0D7101E37C6AA00D65765 /* Networking */,
+				8613977B1E37B04C001904B2 /* Storyboards */,
 				8613976F1E37B01E001904B2 /* Assets.xcassets */,
-				861397711E37B01E001904B2 /* LaunchScreen.storyboard */,
 				861397741E37B01E001904B2 /* Info.plist */,
 				8613976C1E37B01E001904B2 /* GWNYC.xcdatamodeld */,
 			);
 			path = GWNYC;
+			sourceTree = "<group>";
+		};
+		8613977A1E37B031001904B2 /* App Delegation */ = {
+			isa = PBXGroup;
+			children = (
+				861397651E37B01E001904B2 /* AppDelegate.swift */,
+			);
+			name = "App Delegation";
+			sourceTree = "<group>";
+		};
+		8613977B1E37B04C001904B2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				861397691E37B01E001904B2 /* Main.storyboard */,
+				861397711E37B01E001904B2 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		86C0D70D1E37C5D000D65765 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86C0D70E1E37C69100D65765 /* FarmersMarketParser.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		86C0D7101E37C6AA00D65765 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				86C0D7111E37C6C600D65765 /* FarmersMarketAPI.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		86C0D7131E37C6D100D65765 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				861397671E37B01E001904B2 /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FA63F3FBE1600046465E5D3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41D0E581288FE7AE02F5C6BD /* Pods-GWNYC.debug.xcconfig */,
+				2A655F78B97305F045D87056 /* Pods-GWNYC.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 861397771E37B01E001904B2 /* Build configuration list for PBXNativeTarget "GWNYC" */;
 			buildPhases = (
+				FD04722B368EB34B32105A88 /* [CP] Check Pods Manifest.lock */,
 				8613975E1E37B01E001904B2 /* Sources */,
 				8613975F1E37B01E001904B2 /* Frameworks */,
 				861397601E37B01E001904B2 /* Resources */,
+				2BBE426AA58640D99F9EFAC4 /* [CP] Embed Pods Frameworks */,
+				A7798A0EE3508157BA0944C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,13 +208,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BBE426AA58640D99F9EFAC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GWNYC/Pods-GWNYC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7798A0EE3508157BA0944C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GWNYC/Pods-GWNYC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD04722B368EB34B32105A88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8613975E1E37B01E001904B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8613976E1E37B01E001904B2 /* GWNYC.xcdatamodeld in Sources */,
+				86C0D70F1E37C69100D65765 /* FarmersMarketParser.swift in Sources */,
 				861397681E37B01E001904B2 /* ViewController.swift in Sources */,
+				86C0D7121E37C6C600D65765 /* FarmersMarketAPI.swift in Sources */,
 				861397661E37B01E001904B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +386,7 @@
 		};
 		861397781E37B01E001904B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D0E581288FE7AE02F5C6BD /* Pods-GWNYC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TAFW84825Y;
@@ -276,6 +400,7 @@
 		};
 		861397791E37B01E001904B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A655F78B97305F045D87056 /* Pods-GWNYC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TAFW84825Y;
@@ -306,6 +431,7 @@
 				861397791E37B01E001904B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
