@@ -15,7 +15,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testingFMAPI.getFarmersMarketData()
+        testingFMAPI.getFarmersMarketData { (completion) in
+            //
+        }
         
         // Do any additional setup after loading the view, typically from a nib.
     }

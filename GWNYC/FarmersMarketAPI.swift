@@ -22,15 +22,18 @@ struct FMResponseData {
 
 
 class FarmersMarketAPI: NSObject {
-
+    
     let baseurl = "https://data.ny.gov/resource/farmersmarkets.json?"
     
-    func getFarmersMarketData() {
+    func getFarmersMarketData(completion: @escaping FMCompletion) {
         Alamofire.request(baseurl).responseJSON { (response) in
             if let data = response.result.value {
-                print(data)
+                let info = FarmersMarketParser.parseFMData(json: data)
+                completion(.success(response: FMResponseData(results: info)))
             }
+            completion(.failure(error: response.result.error ?? NSError()))
         }
     }
-    
 }
+
+
