@@ -13,6 +13,8 @@
 		8613976E1E37B01E001904B2 /* GWNYC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8613976C1E37B01E001904B2 /* GWNYC.xcdatamodeld */; };
 		861397701E37B01E001904B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8613976F1E37B01E001904B2 /* Assets.xcassets */; };
 		861397731E37B01E001904B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861397711E37B01E001904B2 /* LaunchScreen.storyboard */; };
+		8653C3F21E3FA41F0040B2B1 /* GardenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8653C3F11E3FA41F0040B2B1 /* GardenData.swift */; };
+		8653C3F41E3FA6DD0040B2B1 /* GardenParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8653C3F31E3FA6DD0040B2B1 /* GardenParser.swift */; };
 		86C0D70F1E37C69100D65765 /* FarmersMarketParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C0D70E1E37C69100D65765 /* FarmersMarketParser.swift */; };
 		86C0D7121E37C6C600D65765 /* FarmersMarketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C0D7111E37C6C600D65765 /* FarmersMarketAPI.swift */; };
 		EEAA202FE17727BD9EB4E045 /* Pods_GWNYC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11C69E2496162CAAEE5B4E2 /* Pods_GWNYC.framework */; };
@@ -29,6 +31,8 @@
 		8613976F1E37B01E001904B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		861397721E37B01E001904B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		861397741E37B01E001904B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8653C3F11E3FA41F0040B2B1 /* GardenData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GardenData.swift; sourceTree = "<group>"; };
+		8653C3F31E3FA6DD0040B2B1 /* GardenParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GardenParser.swift; sourceTree = "<group>"; };
 		86C0D70E1E37C69100D65765 /* FarmersMarketParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmersMarketParser.swift; sourceTree = "<group>"; };
 		86C0D7111E37C6C600D65765 /* FarmersMarketAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmersMarketAPI.swift; sourceTree = "<group>"; };
 		C11C69E2496162CAAEE5B4E2 /* Pods_GWNYC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GWNYC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				86C0D70E1E37C69100D65765 /* FarmersMarketParser.swift */,
+				8653C3F31E3FA6DD0040B2B1 /* GardenParser.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				86C0D7111E37C6C600D65765 /* FarmersMarketAPI.swift */,
+				8653C3F11E3FA41F0040B2B1 /* GardenData.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -262,8 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8613976E1E37B01E001904B2 /* GWNYC.xcdatamodeld in Sources */,
+				8653C3F41E3FA6DD0040B2B1 /* GardenParser.swift in Sources */,
 				86C0D70F1E37C69100D65765 /* FarmersMarketParser.swift in Sources */,
 				861397681E37B01E001904B2 /* ViewController.swift in Sources */,
+				8653C3F21E3FA41F0040B2B1 /* GardenData.swift in Sources */,
 				86C0D7121E37C6C600D65765 /* FarmersMarketAPI.swift in Sources */,
 				861397661E37B01E001904B2 /* AppDelegate.swift in Sources */,
 			);

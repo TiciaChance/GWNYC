@@ -24,15 +24,16 @@ class FarmersMarketParser: NSObject {
                     let phoneNumber = information["phone"] as? String,
                     let hours = information["operation_hours"] as? String,
                     let seasons = information["operation_season"] as? String,
+                    //location
                     let detailedLocation = information["location_points"] as? [String : Any],
                     let latitude = detailedLocation["latitude"] as? String,
                     let longitude = detailedLocation["longitude"] as? String,
+                    // link
                     let link = information["market_link"] as? [String : Any],
                     let urlString = link["url"] as? String
                 {
                     let info = Markets(name: marketName, city: city, address: address, location: location, zipCode: zipCode, phoneNumber: phoneNumber, hoursOfOperation: hours, season: seasons, lat : latitude, long: longitude, urlString : urlString)
                     marketsInformation.append(info)
-                    //print(marketsInformation)
                 }
             }
         }
